@@ -1,10 +1,10 @@
-/*
+/*////////////////////////////////////////////
 Name: Marvel's Spider-Man 2 Vortex Extension
 Structure: 3rd-Party Mod Manager (Overstrike)
 Author: ChemBoy1
 Version: 0.1.5
 Date: 02/06/2025
-*/
+////////////////////////////////////////////*/
 
 //Import libraries
 const { actions, fs, util, selectors, log } = require('vortex-api');
