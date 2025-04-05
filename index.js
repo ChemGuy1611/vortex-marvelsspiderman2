@@ -2,8 +2,8 @@
 Name: Marvel's Spider-Man 2 Vortex Extension
 Structure: 3rd-Party Mod Manager (Overstrike)
 Author: ChemBoy1
-Version: 0.1.5
-Date: 02/06/2025
+Version: 0.1.6
+Date: 2025-04-05
 ////////////////////////////////////////////*/
 
 //Import libraries
@@ -35,7 +35,7 @@ const OSMOD_ID = `${GAME_ID}-osmod`;
 const OSMOD_NAME = "Overstrike Mod";
 const OSMOD_FOLDER = "Mods Library";
 const OSMOD_PATH = path.join(OSMOD_FOLDER);
-const OSMOD_EXTS = ['.smpcmod', '.suit', '.stage', '.modular'];
+const OSMOD_EXTS = ['.smpcmod', '.suit', '.suit_style', '.stage', '.modular', '.script'];
 
 const spec = {
   "game": {
