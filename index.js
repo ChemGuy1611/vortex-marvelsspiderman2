@@ -35,7 +35,7 @@ const OSMOD_ID = `${GAME_ID}-osmod`;
 const OSMOD_NAME = "Overstrike Mod";
 const OSMOD_FOLDER = "Mods Library";
 const OSMOD_PATH = path.join(OSMOD_FOLDER);
-const OSMOD_EXTS = ['.smpcmod', '.suit', '.suit_style', '.stage', '.modular', '.script'];
+const OSMOD_EXTS = ['.smpcmod', '.suit', '.suit_style', '.stage', '.modular', '.script']; //add new exts as needed
 
 const spec = {
   "game": {
