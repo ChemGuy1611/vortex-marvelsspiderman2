@@ -496,20 +496,20 @@ function applyGame(context, gameSpec) {
   //register mod installers
   context.registerInstaller(OVERSTRIKE_ID, 25, testOverstrike, installOverstrike);
   context.registerInstaller(OSMOD_ID, 30, testOsMod, installOsMod);
+  
+  //register actions
+  
 }
 
 //Main function
 function main(context) {
   applyGame(context, spec);
-  context.once(() => {
-    // put code here that should be run (once) when Vortex starts up
+  context.once(() => { // put code here that should be run (once) when Vortex starts up
     context.api.onAsync('did-deploy', async (profileId, deployment) => {
       const LAST_ACTIVE_PROFILE = selectors.lastActiveProfileForGame(context.api.getState(), GAME_ID);
       if (profileId !== LAST_ACTIVE_PROFILE) return;
-
       return deployNotify(context.api);
     });
-
   });
   return true;
 }
